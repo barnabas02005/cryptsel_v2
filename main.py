@@ -181,7 +181,7 @@ def monitor_position_and_reenter(exchange, symbol, position):
             amount_precision_val = exchange.markets[symbol]['precision']['amount']
             amount_sig_digits = count_sig_digits(amount_precision_val)
             side = position.get('side').lower()  # typically 'long' or 'short'
-            fromPercnt = 0.2  #20%
+            fromPercnt = 0.1  #20%
             if not liquidation_price or not entry_price or not mark_price:
                 return  # Skip if essential data is missing
             # Calculate how far the price has moved toward liquidation.
