@@ -1,0 +1,2 @@
+[deploy]
+start = "python main.py"
