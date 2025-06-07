@@ -1,0 +1,5 @@
+ccxt
+schedule
+python-dotenv
+pandas
+numpy
